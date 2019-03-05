@@ -49,7 +49,9 @@
 
 		<div>
 			<h4 class="mb-3">회원정보</h4>
-			<form class="needs-validation" novalidate>
+			<form class="needs-validation" name="frm" method="post" action="MemberServlet">
+			<input type ="hidden" name="command" value="member_update">
+			
 				<div class="row">
 					<div class="col-md-6 mb-3">
 						<label for="firstName">First name</label> <input type="text"
@@ -80,6 +82,13 @@
 						placeholder="you@example.com">
 					<div class="invalid-feedback">Please enter a valid email
 						address for shipping updates.</div>
+				</div>
+				
+				<div class="mb-3">
+					<label for="phone">phone</label> <input type="text"
+						class="form-control" id="phone" placeholder="0X0-XXXX-XXX"
+						required>
+					<div class="invalid-feedback">Please enter your phone number.</div>
 				</div>
 
 				<div class="mb-3">
@@ -124,8 +133,9 @@
 				<hr class="mb-4">
 				<div class="custom-control custom-checkbox">
 					<input type="checkbox" class="custom-control-input"
-						id="same-address"> <label class="custom-control-label"
+						id="same-address" required> <label class="custom-control-label"
 						for="same-address">회원 약관 동의(필수)</label>
+					<div class="invalid-feedback">Must be checked.</div>
 				</div>
 				<div class="custom-control custom-checkbox">
 					<input type="checkbox" class="custom-control-input" id="save-info">
