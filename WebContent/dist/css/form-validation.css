@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+.container {
+  max-width: 800px;
+}
+
+.lh-condensed { line-height: 1.25; }

@@ -34,7 +34,9 @@
 <!-- Custom styles for this template -->
 <link href="/QQ/dist/css/signin.css" rel="stylesheet">
 </head>
+
 <body class="text-center">
+
 	<form class="form-signin">
 		<img class="mb-4" src="/docs/4.3/assets/brand/bootstrap-solid.svg"
 			alt="" width="72" height="72">
@@ -52,9 +54,7 @@
 		</div>
 		<button class="btn btn-lg btn-primary btn-block" type="submit">Sign
 			in</button>
-		<p class="mt-5 mb-3 text-muted">&copy; 2017-2019</p>
-	</form>	 
+		<p class="mt-5 mb-3 text-muted">&copy; 99 Budosan. 2019</p>
+	</form>
 </body>
-   <!-- include footer -->
-     <jsp:include page="../common/footer.jsp"></jsp:include>
 </html>

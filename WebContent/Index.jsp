@@ -31,22 +31,22 @@
               <div class="carousel-item active">
                 <img class="d-block w-100" src="images/1900x500_2.jpeg" alt="First slide">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Item 1 Heading</h5>
-                  <p>Item 1 Description</p>
+                  <!-- <h5>Item 1 Heading</h5>
+                  <p>Item 1 Description</p> -->
                 </div>
               </div>
               <div class="carousel-item">
                 <img class="d-block w-100" src="images/1900x500_3.jpg" alt="Second slide">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Item 2 Heading</h5>
-                  <p>Item 2 Description</p>
+                  <!-- <h5>Item 2 Heading</h5>
+                  <p>Item 2 Description</p> -->
                 </div>
               </div>
               <div class="carousel-item">
                 <img class="d-block w-100" src="images/1900x500_4.png" alt="Third slide">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Item 3 Heading</h5>
-                  <p>Item 3 Description</p>
+                  <!-- <h5>Item 3 Heading</h5>
+                  <p>Item 3 Description</p> -->
                 </div>
               </div>
             </div>
