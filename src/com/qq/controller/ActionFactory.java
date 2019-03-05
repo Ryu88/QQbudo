@@ -10,6 +10,7 @@ import com.qq.controller.action.BoardUpdateFormAction;
 import com.qq.controller.action.BoardViewAction;
 import com.qq.controller.action.BoardWriteAction;
 import com.qq.controller.action.BoardWriteFormAction;
+import com.qq.controller.action.member.MemberJoinFormAction;
 
 public class ActionFactory {
 	private static ActionFactory instance = new ActionFactory();
@@ -44,6 +45,8 @@ public class ActionFactory {
 			action = new BoardUpdateAction();
 		}else if (command.equals("board_delete")) {
 			action = new BoardDeleteAction();
+		}else if (command.equals("member_join_form")) {
+			action = new MemberJoinFormAction();
 		}
 		return action;
 	}
