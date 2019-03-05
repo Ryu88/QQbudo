@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap Real Estate Page Template</title>
+    <title>Real Estate</title>
     <!-- Bootstrap -->
     <link href="dist/css/bootstrap.css" rel="stylesheet">
     <!-- Font -->
@@ -17,7 +17,7 @@
   </head>
   <body>
   <!-- navbar include -->
-  <jsp:include page="navbar.jsp"></jsp:include>    
+  <jsp:include page="common/navbar.jsp"></jsp:include>    
     <div class="container mt-3">
       <div class="row">
         <div class="col-12">
@@ -275,7 +275,7 @@
       </div>
     </div>
     <!-- include footer -->
-     <jsp:include page="footer.jsp"></jsp:include> 
+     <jsp:include page="common/footer.jsp"></jsp:include> 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="dist/js/jquery-3.3.1.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
