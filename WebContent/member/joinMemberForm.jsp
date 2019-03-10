@@ -4,14 +4,21 @@
 <html>
 <head>
 <meta charset="utf-8">
-<meta name="viewport"
-	content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="">
-<meta name="generator" content="Jekyll v3.8.5">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Checkout example · Bootstrap</title>
+
+<!-- Bootstrap -->
+
+<link
+	href="https://fonts.googleapis.com/css?family=Kosugi+Maru&amp;subset=japanese"
+	rel="stylesheet">
+<!-- css -->
+<link href="/QQ/dist/css/index.css" rel="stylesheet">
 
 <!-- Bootstrap core CSS -->
 <link href="/QQ/dist/css/bootstrap.css" rel="stylesheet">
+
 
 
 <style>
@@ -33,8 +40,11 @@
 <!-- Custom styles for this template -->
 <link href="/QQ/dist/css/form-validation.css" rel="stylesheet">
 </head>
+
 <body class="bg-light">
-	<div class="container">
+	<!-- include navbar -->
+	<jsp:include page="../common/navbar.jsp"></jsp:include>
+	<div class="container mt-3">
 		<div class="py-5 text-center">
 			<img class="d-block mx-auto mb-4"
 				src="/docs/4.3/assets/brand/bootstrap-solid.svg" alt="" width="72"
@@ -49,9 +59,10 @@
 
 		<div>
 			<h4 class="mb-3">회원정보</h4>
-			<form class="needs-validation" name="frm" method="post" action="MemberServlet">
-			<input type ="hidden" name="command" value="member_update">
-			
+			<form class="needs-validation" name="frm" method="post"
+				action="MemberServlet">
+				<input type="hidden" name="command" value="member_update">
+
 				<div class="row">
 					<div class="col-md-6 mb-3">
 						<label for="firstName">First name</label> <input type="text"
@@ -83,7 +94,7 @@
 					<div class="invalid-feedback">Please enter a valid email
 						address for shipping updates.</div>
 				</div>
-				
+
 				<div class="mb-3">
 					<label for="phone">phone</label> <input type="text"
 						class="form-control" id="phone" placeholder="0X0-XXXX-XXX"
@@ -133,13 +144,15 @@
 				<hr class="mb-4">
 				<div class="custom-control custom-checkbox">
 					<input type="checkbox" class="custom-control-input"
-						id="same-address" required> <label class="custom-control-label"
-						for="same-address">회원 약관 동의(필수)</label>
+						id="same-address" required> <label
+						class="custom-control-label" for="same-address">회원 약관
+						동의(필수)</label>
 					<div class="invalid-feedback">Must be checked.</div>
 				</div>
 				<div class="custom-control custom-checkbox">
 					<input type="checkbox" class="custom-control-input" id="save-info">
-					<label class="custom-control-label" for="save-info">이메일 수신동의(선택)</label>
+					<label class="custom-control-label" for="save-info">이메일
+						수신동의(선택)</label>
 				</div>
 				<hr class="mb-4">
 
@@ -156,7 +169,7 @@
 							class="custom-control-input" required> <label
 							class="custom-control-label" for="debit">사업자</label>
 					</div>
-					
+
 				</div>
 
 

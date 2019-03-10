@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 	<a class="navbar-brand" href="#">99 不動産</a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -30,7 +31,7 @@
 		<form class="form-inline my-2 my-lg-0">
 			<input class="form-control mr-sm-2" type="search"
 				placeholder="Search" aria-label="Search">
-			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+			<button class="btn btn-outline-success my-1 my-sm-0" type="submit">Search</button>
 		</form>
 	</div>
 </nav>

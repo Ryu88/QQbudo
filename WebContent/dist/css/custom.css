@@ -1,0 +1,15 @@
+
+.carousel-control{
+    top: 50%;
+}
+.carousel{
+    margin-bottom: 30px;
+}
+.thumbnail{
+    text-align: center;
+}
+.price{
+    font-size: 21px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
