@@ -30,6 +30,24 @@ html, body {
 	margin: 0;
 	padding: 0;
 }
+/* #floating-panel {
+        position: relative;
+        top: 55px;
+        left: 30%;
+        z-index: 5;
+        background-color: #fff;
+        padding: 1px;
+        border: 1px solid #999;
+        text-align: center;
+        font-family: 'Roboto','sans-serif';
+        line-height: 30px;
+        padding-left: 10px;
+        width:0%
+      } */
+#floating-panel{
+	position: relative;
+	z-index: 5;
+}
 </style>
 <script>
 	// This example requires the Places library. Include the libraries=places
@@ -39,8 +57,12 @@ html, body {
 	var map;
 	var service;
 	var infowindow;
+	var ori;
+	var des;
 
 	function initMap() {
+		var directionsDisplay = new google.maps.DirectionsRenderer;
+        var directionsService = new google.maps.DirectionsService;
 		var tokyo = new google.maps.LatLng(35.6691074, 139.6012976);
 
 		infowindow = new google.maps.InfoWindow();
@@ -51,7 +73,7 @@ html, body {
 		});
 
 		var request = {
-			query : '日本 東京都千代田区外神田１丁目１５−４',
+			query : '日本 東京都千代田区外神田１丁目１５−４', //주소 넣을 자리
 			fields : [ 'name', 'geometry' ],
 		};
 
@@ -62,10 +84,39 @@ html, body {
 				for (var i = 0; i < results.length; i++) {
 					createMarker(results[i]);
 				}
-
+				
+				des = results[0].geometry.location;
 				map.setCenter(results[0].geometry.location);
+				var request2 = {
+					location : results[0].geometry.location,
+					radius : '500',
+					type : [ 'subway_station' ]
+				};	
+								
+				service.nearbySearch(request2, callback2);
+				directionsDisplay.setMap(map);
+
+		        calculateAndDisplayRoute(directionsService, directionsDisplay);
+		        document.getElementById('mode').addEventListener('change', function() {
+		          calculateAndDisplayRoute(directionsService, directionsDisplay);
+		        });
+
+				
 			}
 		});
+		
+		
+
+	}
+
+	function callback2(results, status) {
+		if (status == google.maps.places.PlacesServiceStatus.OK) {
+			for (var i = 0; i < results.length; i++) {
+				var place = results[i];				 
+				ori = results[0].geometry.location;
+				
+			}
+		}
 	}
 
 	function createMarker(place) {
@@ -78,7 +129,29 @@ html, body {
 			infowindow.setContent(place.name);
 			infowindow.open(map, this);
 		});
+
 	}
+	
+	function calculateAndDisplayRoute(directionsService, directionsDisplay) {
+		
+		var selectedMode = document.getElementById('mode').value;
+        directionsService.route({
+          origin: ori,  // Haight.
+          destination: des,  // Ocean Beach.
+          // Note that Javascript allows us to access the constant
+          // using square brackets and a string value as its
+          // "property."
+          travelMode: google.maps.TravelMode[selectedMode],
+          
+        
+        }, function(response, status) {
+          if (status == 'OK') {
+            directionsDisplay.setDirections(response);
+          } else {
+            window.alert('Directions request failed due to ' + status);
+          }
+        });
+      }
 </script>
 </head>
 <body>
@@ -221,10 +294,20 @@ html, body {
 		<br>
 	</div>
 	<br>
-	<!-- <div id="map" class="container mt-2"></div>
+	<div id="floating-panel" class="container mt-2">    
+    <select id="mode">
+      <option value="DRIVING">역까지의 경로</option>
+      <option value="WALKING">걷기</option>
+      
+      
+    </select>
+    </div>
+	
+	<div id="map" class="container mt-2"></div>
+	
 	<script
 		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDInbZlPevaJ0oEb5AgxUVkPB36BXAyEj0&libraries=places&callback=initMap&language=ja&region=JP"
-		async defer></script> -->
+		async defer></script>
 	<jsp:include page="../common/footer.jsp"></jsp:include>
 	<script src="/QQ/dist/js/jquery-3.3.1.min.js"></script>
 	<script src="/QQ/dist/js/bootstrap.min.js"></script>
