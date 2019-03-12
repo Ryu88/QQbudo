@@ -5,16 +5,17 @@ public class PropertyVO {
     private String name; // 작성자
     private String phone; // 작성자 전화
     private String email; // 작성자 이메일
+    private String title; // 글제목
     private String add; 
     private String pictureurl1; // 사진 경로 1
     private String pictureurl2;
     private String pictureurl3;
     private String pictureurl4;
     private String pictureurl5;
-    private String type; // 부동산타입 
+    private String hometype; // 부동산타입 
     private int rent; // 
     private String boption; //방 옵션
-    private String station; // 가까운 역
+    private String stationkm; // 가까운 역
     private String content; //글 내용
     private int readcount; //조회수
     private String writedate; // 글쓴 날짜
@@ -23,33 +24,30 @@ public class PropertyVO {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-    
-    
 
-	public PropertyVO(int num, String name, String phone, String email, String add, String pictureurl1,
-			String pictureurl2, String pictureurl3, String pictureurl4, String pictureurl5, String type, int rent,
+	public PropertyVO(int num, String name, String phone, String email, String title, String add, String pictureurl1,
+			String pictureurl2, String pictureurl3, String pictureurl4, String pictureurl5, String hometype, int rent,
 			String boption, String station, String content, int readcount, String writedate) {
 		super();
 		this.num = num;
 		this.name = name;
 		this.phone = phone;
 		this.email = email;
+		this.title = title;
 		this.add = add;
 		this.pictureurl1 = pictureurl1;
 		this.pictureurl2 = pictureurl2;
 		this.pictureurl3 = pictureurl3;
 		this.pictureurl4 = pictureurl4;
 		this.pictureurl5 = pictureurl5;
-		this.type = type;
+		this.hometype = hometype;
 		this.rent = rent;
 		this.boption = boption;
-		this.station = station;
+		this.stationkm = station;
 		this.content = content;
 		this.readcount = readcount;
 		this.writedate = writedate;
 	}
-
-
 
 	public int getNum() {
 		return num;
@@ -81,6 +79,14 @@ public class PropertyVO {
 
 	public void setEmail(String email) {
 		this.email = email;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
 	}
 
 	public String getAdd() {
@@ -131,12 +137,12 @@ public class PropertyVO {
 		this.pictureurl5 = pictureurl5;
 	}
 
-	public String getType() {
-		return type;
+	public String getHometype() {
+		return hometype;
 	}
 
-	public void setType(String type) {
-		this.type = type;
+	public void setHometype(String hometype) {
+		this.hometype = hometype;
 	}
 
 	public int getRent() {
@@ -155,13 +161,7 @@ public class PropertyVO {
 		this.boption = boption;
 	}
 
-	public String getStation() {
-		return station;
-	}
-
-	public void setStation(String station) {
-		this.station = station;
-	}
+	
 
 	public String getContent() {
 		return content;
@@ -185,16 +185,25 @@ public class PropertyVO {
 
 	public void setWritedate(String writedate) {
 		this.writedate = writedate;
+	}	
+
+	public String getStationkm() {
+		return stationkm;
+	}
+
+	public void setStationkm(String stationkm) {
+		this.stationkm = stationkm;
 	}
 
 	@Override
 	public String toString() {
-		return "PropertyVO [num=" + num + ", name=" + name + ", phone=" + phone + ", email=" + email + ", add=" + add
-				+ ", pictureurl1=" + pictureurl1 + ", pictureurl2=" + pictureurl2 + ", pictureurl3=" + pictureurl3
-				+ ", pictureurl4=" + pictureurl4 + ", pictureurl5=" + pictureurl5 + ", type=" + type + ", rent=" + rent
-				+ ", boption=" + boption + ", station=" + station + ", content=" + content + ", readcount=" + readcount
-				+ ", writedate=" + writedate + "]";
-	}
+		return "PropertyVO [num=" + num + ", name=" + name + ", phone=" + phone + ", email=" + email + ", title="
+				+ title + ", add=" + add + ", pictureurl1=" + pictureurl1 + ", pictureurl2=" + pictureurl2
+				+ ", pictureurl3=" + pictureurl3 + ", pictureurl4=" + pictureurl4 + ", pictureurl5=" + pictureurl5
+				+ ", hometype=" + hometype + ", rent=" + rent + ", boption=" + boption + ", station=" + stationkm
+				+ ", content=" + content + ", readcount=" + readcount + ", writedate=" + writedate + "]";
+	}    
+    
     
     
     

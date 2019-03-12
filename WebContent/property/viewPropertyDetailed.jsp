@@ -294,9 +294,8 @@ html, body {
 		<br>
 	</div>
 	<br>
-<<<<<<< HEAD
+
 	<div id="map" class="container mt-2"></div>
-=======
 	<div id="floating-panel" class="container mt-2">    
     <select id="mode">
       <option value="DRIVING">역까지의 경로</option>
@@ -305,10 +304,6 @@ html, body {
       
     </select>
     </div>
-	
-	<div id="map" class="container mt-2"></div>
-	
->>>>>>> branch 'master' of https://github.com/Ryu88/QQbudo
 	<script
 		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDInbZlPevaJ0oEb5AgxUVkPB36BXAyEj0&libraries=places&callback=initMap&language=ja&region=JP"
 		async defer></script>

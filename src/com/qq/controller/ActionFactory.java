@@ -11,6 +11,8 @@ import com.qq.controller.action.BoardViewAction;
 import com.qq.controller.action.BoardWriteAction;
 import com.qq.controller.action.BoardWriteFormAction;
 import com.qq.controller.action.member.MemberJoinFormAction;
+import com.qq.controller.action.member.MemberLoginFormAction;
+import com.qq.controller.action.property.PropertyIndex;
 import com.qq.controller.action.property.PropertyViewDetailedAction;
 
 public class ActionFactory {
@@ -50,6 +52,10 @@ public class ActionFactory {
 			action = new MemberJoinFormAction();
 		}else if (command.contentEquals("view_detailed")) {
 			action = new PropertyViewDetailedAction();
+		}else if (command.contentEquals("member_login_form")) {
+			action = new MemberLoginFormAction();
+		}else if (command.contentEquals("index")) {
+			action = new PropertyIndex();
 		}
 		return action;
 	}
