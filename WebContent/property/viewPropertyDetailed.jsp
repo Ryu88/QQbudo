@@ -221,10 +221,10 @@ html, body {
 		<br>
 	</div>
 	<br>
-	<!-- <div id="map" class="container mt-2"></div>
+	<div id="map" class="container mt-2"></div>
 	<script
 		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDInbZlPevaJ0oEb5AgxUVkPB36BXAyEj0&libraries=places&callback=initMap&language=ja&region=JP"
-		async defer></script> -->
+		async defer></script>
 	<jsp:include page="../common/footer.jsp"></jsp:include>
 	<script src="/QQ/dist/js/jquery-3.3.1.min.js"></script>
 	<script src="/QQ/dist/js/bootstrap.min.js"></script>
