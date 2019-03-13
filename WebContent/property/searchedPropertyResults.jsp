@@ -1,307 +1,222 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap eCommerce Page Template</title>
-        <!-- Bootstrap -->
-    <link href="dist/css/bootstrap.css" rel="stylesheet">
-    <!-- Font -->
-    <link href="https://fonts.googleapis.com/css?family=Kosugi+Maru&amp;subset=japanese" rel="stylesheet">
-    <!-- css -->
-    <link href="dist/css/index.css" rel ="stylesheet"> 
-  </head>
-  <body>
-      <!-- navbar include -->
-  <jsp:include page="../common/navbar.jsp"></jsp:include>
-    <div class="container mt-3">
-      <div class="row">
-        <div class="col-12">
-          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleControls" data-slide-to="1"></li>
-              <li data-target="#carouselExampleControls" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img class="d-block w-100" src="images/1920x500.gif" alt="First slide">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Item 1 Heading</h5>
-                  <p>Item 1 Description</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="images/1920x500.gif" alt="Second slide">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Item 2 Heading</h5>
-                  <p>Item 2 Description</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="images/1920x500.gif" alt="Third slide">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Item 3 Heading</h5>
-                  <p>Item 3 Description</p>
-                </div>
-              </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-            </a>
-          </div>
-        </div>
-      </div>
-      <hr>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-4">
-          <div class="row">
-           <div class="col-2"><img class="rounded-circle" alt="Free Shipping" src="images/40X40.gif"></div>
-            <div class="col-lg-6 col-10 ml-1">
-              <h4>Free Shipping</h4>
-            </div>
-          </div>
-        </div>
-        <div class="col-4">
-          <div class="row">
-            <div class="col-2"><img class="rounded-circle" alt="Free Shipping" src="images/40X40.gif"></div>
-            <div class="col-lg-6 col-10 ml-1">
-              <h4>Free Returns</h4>
-            </div>
-          </div>
-        </div>
-        <div class="col-4">
-          <div class="row">
-            <div class="col-2"><img class="rounded-circle" alt="Free Shipping" src="images/40X40.gif"></div>
-            <div class="col-lg-6 col-10 ml-1">
-              <h4>Low Prices</h4>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <hr>
-    <h2 class="text-center">RECOMMENDED PRODUCTS</h2>
-    <hr>
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-md-4 pb-1 pb-md-0">
-          <div class="card">
-            <img class="card-img-top" src="images/400X200.gif" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Add to Cart</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 pb-1 pb-md-0">
-          <div class="card">
-            <img class="card-img-top" src="images/400X200.gif" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Add to Cart</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 pb-1 pb-md-0">
-          <div class="card">
-            <img class="card-img-top" src="images/400X200.gif" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Add to Cart</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row text-center mt-4">
-        <div class="col-md-4 pb-1 pb-md-0">
-          <div class="card">
-            <img class="card-img-top" src="images/400X200.gif" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Add to Cart</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 pb-1 pb-md-0">
-          <div class="card">
-            <img class="card-img-top" src="images/400X200.gif" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Add to Cart</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 pb-1 pb-md-0">
-          <div class="card">
-            <img class="card-img-top" src="images/400X200.gif" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Add to Cart</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <hr>
-    <h2 class="text-center">FEATURED PRODUCTS</h2>
-    <hr>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <ul class="list-unstyled">
-            <li class="media">
-              <img class="mr-3" src="images/100X125.gif" alt="Generic placeholder image">
-              <div class="media-body">
-                <h5 class="mt-0 mb-1">List-based media object</h5>
-                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-              </div>
-            </li>
-            <li class="media my-4">
-              <img class="mr-3" src="images/100X125.gif" alt="Generic placeholder image">
-              <div class="media-body">
-                <h5 class="mt-0 mb-1">List-based media object</h5>
-                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-              </div>
-            </li>
-            <li class="media">
-              <img class="mr-3" src="images/100X125.gif" alt="Generic placeholder image">
-              <div class="media-body">
-                <h5 class="mt-0 mb-1">List-based media object</h5>
-                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-4">
-          <ul class="list-unstyled">
-            <li class="media">
-              <img class="mr-3" src="images/100X125.gif" alt="Generic placeholder image">
-              <div class="media-body">
-                <h5 class="mt-0 mb-1">List-based media object</h5>
-                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-              </div>
-            </li>
-            <li class="media my-4">
-              <img class="mr-3" src="images/100X125.gif" alt="Generic placeholder image">
-              <div class="media-body">
-                <h5 class="mt-0 mb-1">List-based media object</h5>
-                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-              </div>
-            </li>
-            <li class="media">
-              <img class="mr-3" src="images/100X125.gif" alt="Generic placeholder image">
-              <div class="media-body">
-                <h5 class="mt-0 mb-1">List-based media object</h5>
-                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-4">
-          <ul class="list-unstyled">
-            <li class="media">
-              <img class="mr-3" src="images/100X125.gif" alt="Generic placeholder image">
-              <div class="media-body">
-                <h5 class="mt-0 mb-1">List-based media object</h5>
-                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-              </div>
-            </li>
-            <li class="media my-4">
-              <img class="mr-3" src="images/100X125.gif" alt="Generic placeholder image">
-              <div class="media-body">
-                <h5 class="mt-0 mb-1">List-based media object</h5>
-                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-              </div>
-            </li>
-            <li class="media">
-              <img class="mr-3" src="images/100X125.gif" alt="Generic placeholder image">
-              <div class="media-body">
-                <h5 class="mt-0 mb-1">List-based media object</h5>
-                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <hr>
-    <div class="container text-white bg-dark p-4">
-      <div class="row">
-        <div class="col-6 col-md-8 col-lg-7">
-          <div class="row text-center">
-            <div class="col-sm-6 col-md-4 col-lg-4 col-12">
-              <ul class="list-unstyled">
-                <li class="btn-link"> <a>Link anchor</a> </li>
-                <li class="btn-link"> <a>Link anchor</a> </li>
-                <li class="btn-link"> <a>Link anchor</a> </li>
-                <li class="btn-link"> <a>Link anchor</a> </li>
-                <li class="btn-link"> <a>Link anchor</a> </li>
-              </ul>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-4 col-12">
-              <ul class="list-unstyled">
-                <li class="btn-link"> <a>Link anchor</a> </li>
-                <li class="btn-link"> <a>Link anchor</a> </li>
-                <li class="btn-link"> <a>Link anchor</a> </li>
-                <li class="btn-link"> <a>Link anchor</a> </li>
-                <li class="btn-link"> <a>Link anchor</a> </li>
-              </ul>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-4 col-12">
-              <ul class="list-unstyled">
-                <li class="btn-link"> <a>Link anchor</a> </li>
-                <li class="btn-link"> <a>Link anchor</a> </li>
-                <li class="btn-link"> <a>Link anchor</a> </li>
-                <li class="btn-link"> <a>Link anchor</a> </li>
-                <li class="btn-link"> <a>Link anchor</a> </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-lg-5 col-6">
-          <address>
-            <strong>MyStoreFront, Inc.</strong><br>
-            Indian Treasure Link<br>
-            Quitman, WA, 99110-0219<br>
-            <abbr title="Phone">P:</abbr> (123) 456-7890
-          </address>
-          <address>
-            <strong>Full Name</strong><br>
-            <a href="mailto:#">first.last@example.com</a>
-          </address>
-        </div>
-      </div>
-    </div>
-    <footer class="text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <p>Copyright © MyWebsite. All rights reserved.</p>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="dist/js/jquery-3.3.1.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="dist/js/popper.min.js"></script>
-    <script src="dist/js/bootstrap.js"></script>
-  </body>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bootstrap Page Template</title>
+<!-- Bootstrap -->
+<link href="dist/css/bootstrap.css" rel="stylesheet">
+<!-- Font -->
+<link
+	href="https://fonts.googleapis.com/css?family=Kosugi+Maru&amp;subset=japanese"
+	rel="stylesheet">
+<!-- css -->
+<link href="dist/css/index.css" rel="stylesheet">
+
+</head>
+<body>
+	<!-- navbar include -->
+	<jsp:include page="../common/navbar.jsp"></jsp:include>
+	<br>
+	<br>
+	<div class="container">
+		<div class="row">
+			<div class="col-4">
+				<div class="row">
+					<div class="col-2">
+						<img class="rounded-circle" alt="Free Shipping"
+							src="images/40X40.gif">
+					</div>
+					<div class="col-lg-6 col-10 ml-1">
+						<h4>인기순 정렬</h4>
+					</div>
+				</div>
+			</div>
+			<div class="col-4">
+				<div class="row">
+					<div class="col-2">
+						<img class="rounded-circle" alt="Free Shipping"
+							src="images/40X40.gif">
+					</div>
+					<div class="col-lg-6 col-10 ml-1">
+						<h4>최신순 정렬</h4>
+					</div>
+				</div>
+			</div>
+			<div class="col-4">
+				<div class="row">
+					<div class="col-2">
+						<img class="rounded-circle" alt="Free Shipping"
+							src="images/40X40.gif">
+					</div>
+					<div class="col-lg-6 col-10 ml-1">
+						<h4>가격순 정렬</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<h2 class="text-center">검색결과</h2>
+	<hr>
+	<div class="container">
+		
+		<div class="row text-center mt-4">
+			<div class="col-md-4 pb-1 pb-md-0">
+				<div class="card">
+					<img class="card-img-top" src="images/400X200.gif"
+						alt="Card image cap">
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">Some quick example text to build on the
+							card title and make up the bulk of the card's content.</p>
+						<a href="#" class="btn btn-primary">Add to Cart</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 pb-1 pb-md-0">
+				<div class="card">
+					<img class="card-img-top" src="images/400X200.gif"
+						alt="Card image cap">
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">Some quick example text to build on the
+							card title and make up the bulk of the card's content.</p>
+						<a href="#" class="btn btn-primary">Add to Cart</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 pb-1 pb-md-0">
+				<div class="card">
+					<img class="card-img-top" src="images/400X200.gif"
+						alt="Card image cap">
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">Some quick example text to build on the
+							card title and make up the bulk of the card's content.</p>
+						<a href="#" class="btn btn-primary">Add to Cart</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row text-center mt-4">
+			<div class="col-md-4 pb-1 pb-md-0">
+				<div class="card">
+					<img class="card-img-top" src="images/400X200.gif"
+						alt="Card image cap">
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">Some quick example text to build on the
+							card title and make up the bulk of the card's content.</p>
+						<a href="#" class="btn btn-primary">Add to Cart</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 pb-1 pb-md-0">
+				<div class="card">
+					<img class="card-img-top" src="images/400X200.gif"
+						alt="Card image cap">
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">Some quick example text to build on the
+							card title and make up the bulk of the card's content.</p>
+						<a href="#" class="btn btn-primary">Add to Cart</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 pb-1 pb-md-0">
+				<div class="card">
+					<img class="card-img-top" src="images/400X200.gif"
+						alt="Card image cap">
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">Some quick example text to build on the
+							card title and make up the bulk of the card's content.</p>
+						<a href="#" class="btn btn-primary">Add to Cart</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row text-center mt-4">
+			<div class="col-md-4 pb-1 pb-md-0">
+				<div class="card">
+					<img class="card-img-top" src="images/400X200.gif"
+						alt="Card image cap">
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">Some quick example text to build on the
+							card title and make up the bulk of the card's content.</p>
+						<a href="#" class="btn btn-primary">Add to Cart</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 pb-1 pb-md-0">
+				<div class="card">
+					<img class="card-img-top" src="images/400X200.gif"
+						alt="Card image cap">
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">Some quick example text to build on the
+							card title and make up the bulk of the card's content.</p>
+						<a href="#" class="btn btn-primary">Add to Cart</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 pb-1 pb-md-0">
+				<div class="card">
+					<img class="card-img-top" src="images/400X200.gif"
+						alt="Card image cap">
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">Some quick example text to build on the
+							card title and make up the bulk of the card's content.</p>
+						<a href="#" class="btn btn-primary">Add to Cart</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<h2 class="text-center">최근 본 매물</h2>
+	<hr>
+	<hr>
+	<div class="container">
+		
+		<div class="row text-center mt-4">
+			<div class="col-md-4 pb-1 pb-md-0">
+				<div class="card">
+					<img class="card-img-top" src="images/400X200.gif"
+						alt="Card image cap">
+					
+				</div>
+			</div>
+			<div class="col-md-4 pb-1 pb-md-0">
+				<div class="card">
+					<img class="card-img-top" src="images/400X200.gif"
+						alt="Card image cap">
+					
+				</div>
+			</div>
+			<div class="col-md-4 pb-1 pb-md-0">
+				<div class="card">
+					<img class="card-img-top" src="images/400X200.gif"
+						alt="Card image cap">
+					
+				</div>
+			</div>
+		</div>		
+	</div>
+	<hr>	
+	
+	<!-- navbar include -->
+	<jsp:include page="../common/footer.jsp"></jsp:include>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="dist/js/jquery-3.3.1.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="dist/js/popper.min.js"></script>
+	<script src="dist/js/bootstrap.js"></script>
+</body>
 </html>

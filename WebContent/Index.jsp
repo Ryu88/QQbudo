@@ -107,7 +107,7 @@
     </section>
     <hr>
     <div class="container">
-      <div class="row">
+      <div class="row text-center mt-4">
         <div class="col-lg-8 col-12">
           <div class="row">
             <div class="col-sm-6 col-12">
@@ -130,7 +130,7 @@
                 </div>
               </div>
             </div>            
-            <div class="col-sm-6 col-12">
+            <div class="col-sm-6 col-12 mt-4">
               <div class="card">
                 <img class="card-img-top" src="images/400X200.gif" alt="Card image cap">
                 <div class="card-body">
@@ -140,7 +140,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-12">
+            <div class="col-sm-6 col-12 mt-4">
               <div class="card">
                 <img class="card-img-top" src="images/400X200.gif" alt="Card image cap">
                 <div class="card-body">
@@ -150,29 +150,7 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-6 col-12">
-              <div class="card">
-                <img class="card-img-top" src="images/400X200.gif" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="PropertyServlet?command=view_detailed" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-12">
-              <div class="card">
-                <img class="card-img-top" src="images/400X200.gif" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="PropertyServlet?command=view_detailed" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-            </div>
-          </div>
+          </div>          
         </div>
         <hr>
         <div class="col-lg-4 col-12">
@@ -243,7 +221,7 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, consequatur neque exercitationem distinctio esse! Cupiditate doloribus a consequatur iusto illum eos facere vel iste iure maxime. Velit, rem, sunt obcaecati eveniet id nemo molestiae. In.</p>
             </div>
             <div class="col-lg-6 col-12">
-              <h3>Latest News</h3>
+              <h3>새로추가된 매물</h3>
               <hr>
               <div>
             <div class="media">

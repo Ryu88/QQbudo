@@ -49,6 +49,7 @@ html, body {
 	z-index: 5;
 }
 </style>
+
 <script>
 	// This example requires the Places library. Include the libraries=places
 	// parameter when you first load the API. For example:
@@ -153,6 +154,8 @@ html, body {
         });
       }
 </script>
+<!-- css -->
+    <link href="dist/css/index.css" rel ="stylesheet"> 
 </head>
 <body>
 	<jsp:include page="../common/navbar.jsp"></jsp:include>

@@ -13,6 +13,7 @@ import com.qq.controller.action.BoardWriteFormAction;
 import com.qq.controller.action.member.MemberJoinFormAction;
 import com.qq.controller.action.member.MemberLoginFormAction;
 import com.qq.controller.action.property.PropertyIndex;
+import com.qq.controller.action.property.PropertySearchedResults;
 import com.qq.controller.action.property.PropertyViewDetailedAction;
 
 public class ActionFactory {
@@ -56,6 +57,8 @@ public class ActionFactory {
 			action = new MemberLoginFormAction();
 		}else if (command.contentEquals("index")) {
 			action = new PropertyIndex();
+		}else if (command.contentEquals("search_results")) {
+			action = new PropertySearchedResults();
 		}
 		return action;
 	}
